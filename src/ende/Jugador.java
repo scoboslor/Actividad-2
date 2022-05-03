@@ -13,7 +13,7 @@ class Jugador {
      */
     public String opcion_al_azar() {
         String opcion = "";
-        Integer c = (int) (Math.random() * 3);
+        int c = (int) (Math.random() * 3);
         switch (c) {
             case 0:
                 opcion = ("piedra");
@@ -32,7 +32,7 @@ class Jugador {
     }
 
     public int getExitos() {
-        return (exitos);
+        return exitos;
     }
 
 }
