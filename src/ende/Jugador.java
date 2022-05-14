@@ -11,10 +11,10 @@ class Jugador {
     /**
      * Escoge piedra, papel o tijera al azar
      */
-    public String opcion_al_azar() {
+    public String opcionAlAzar() {
         String opcion = "";
-        int c = (int) (Math.random() * 3);
-        switch (c) {
+        int numeroOpcion = (int) (Math.random() * 3);
+        switch (numeroOpcion) {
             case 0:
                 opcion = ("piedra");
                 break;
@@ -23,6 +23,10 @@ class Jugador {
                 break;
             case 2:
                 opcion = ("tijeras");
+                break;
+            default:
+                opcion = ("error");
+                break;
         }
         return opcion;
     }
