@@ -10,8 +10,8 @@ public class Juego {
         Jugador jugador2 = new Jugador();
         boolean finDeJuego = false;
         int rondasJugadas = 0;    // Número de rondas jugadas
-        int exitosJugador1 = jugador1.exitos;
-        int exitosJugador2 = jugador2.exitos;
+        int exitosJugador1 = jugador1.getExitos();
+        int exitosJugador2 = jugador2.getExitos();
         int empates = 0;
         String opcionJugador1;
         String opcionJugador2;
@@ -52,7 +52,7 @@ public class Juego {
                 System.out.println("\n\t\t\t Empate \n");
             }
             rondasJugadas++;
-            if ((jugador1.exitos >= 3) || (jugador2.exitos >= 3)) {
+            if ((exitosJugador1 >= 3) || (exitosJugador2 >= 3)) {
                 finDeJuego = true;
                 System.out.println("FIN DEL JUEGO!!");
             }
