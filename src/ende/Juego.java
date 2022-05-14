@@ -3,8 +3,6 @@ package ende;
 /**
  * Simula el juego de Piedra, Papel o tijera
  */
-
-
 public class Juego {
 
     public static void main(String[] args) {
@@ -15,7 +13,8 @@ public class Juego {
         int EXITOS_JUGADOR1 = p1.exitos;
         int EXITOS_JUGADOR2 = p2.exitos;
         int empates = 0;
-        String OPCION_JUGADOR1, OPCION_JUGADOR2;
+        String OPCION_JUGADOR1;
+        String OPCION_JUGADOR2;
 
         // Bucle de juego
         do {
